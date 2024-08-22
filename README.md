@@ -66,8 +66,6 @@ php bin/magento cache:flush
 ## Customization Options:
 Tailor the delete order process to match your store's specific requirements with customizable permissions and logging options.
 
-![img1](./doc/images/1.png)
-![img2](./doc/images/2.png)
 ![img3](./doc/images/3.png)
 ![img4](./doc/images/4.png)
 ![img5](./doc/images/5.png)
