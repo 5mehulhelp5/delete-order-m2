@@ -69,7 +69,7 @@ Tailor the delete order process to match your store's specific requirements with
 ![img3](./doc/images/3.png)
 ![img4](./doc/images/4.png)
 ![img5](./doc/images/5.png)
-![img6](./doc/images/6.png)
+![img6](./doc/images/6.png) 
 ![img7](./doc/images/7.png)
 
 ## Support:
