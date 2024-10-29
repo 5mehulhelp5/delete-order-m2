@@ -64,9 +64,10 @@ class Delete
     }
 
     /**
-     * @param $invoiceId
-     * @return \Magento\Sales\Model\Order
-     * @throws \Exception
+     * Delete Invoice
+     *
+     * @param [type] $invoiceId
+     * @return void
      */
     public function deleteInvoice($invoiceId)
     {

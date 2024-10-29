@@ -44,8 +44,10 @@ class Data extends \Magento\Framework\App\Helper\AbstractHelper
     }
 
     /**
-     * @param null $name
-     * @return bool|string|null
+     * Table Name
+     *
+     * @param [type] $name
+     * @return void
      */
     public function getTableName($name = null)
     {

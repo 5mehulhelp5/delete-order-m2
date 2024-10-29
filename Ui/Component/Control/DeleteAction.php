@@ -25,7 +25,7 @@ use Magento\Ui\Component\Control\Action;
 class DeleteAction extends Action
 {
     /**
-     * setup url
+     * Setup url
      */
     public function prepare()
     {

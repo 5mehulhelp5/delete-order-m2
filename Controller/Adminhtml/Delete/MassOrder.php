@@ -44,11 +44,13 @@ class MassOrder extends \Magento\Sales\Controller\Adminhtml\Order\AbstractMassAc
     protected $delete;
 
     /**
-     * MassOrder constructor.
+     * Construct
+     *
      * @param Context $context
      * @param Filter $filter
+     * @param CollectionFactory $collectionFactory
      * @param OrderManagementInterface $orderManagement
-     * @param CollectionFactory $orderCollectionFactory
+     * @param \Magento\Sales\Model\ResourceModel\Order\CollectionFactory $orderCollectionFactory
      * @param \Mavenbird\DeleteOrder\Model\Order\Delete $delete
      */
     public function __construct(
@@ -67,10 +69,10 @@ class MassOrder extends \Magento\Sales\Controller\Adminhtml\Order\AbstractMassAc
     }
 
     /**
+     * Mass Action
+     *
      * @param AbstractCollection $collection
-     * @return \Magento\Framework\App\ResponseInterface|\Magento\Framework\Controller\Result\Redirect|\Magento\Framework\Controller\ResultInterface
-     * @throws \Magento\Framework\Exception\LocalizedException
-     * @SuppressWarnings(PHPMD.UnusedFormalParameter)
+     * @return void
      */
     protected function massAction(AbstractCollection $collection)
     {
@@ -91,8 +93,10 @@ class MassOrder extends \Magento\Sales\Controller\Adminhtml\Order\AbstractMassAc
         return $resultRedirect;
     }
 
-    /*
-     * Check permission via ACL resource
+    /**
+     * Allowed
+     *
+     * @return void
      */
     protected function _isAllowed()
     {
@@ -100,8 +104,10 @@ class MassOrder extends \Magento\Sales\Controller\Adminhtml\Order\AbstractMassAc
     }
 
     /**
-     * @param $orderId
-     * @throws \Exception
+     * Delete Order
+     *
+     * @param [type] $orderId
+     * @return void
      */
     protected function deleteOrder($orderId)
     {

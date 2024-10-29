@@ -55,8 +55,10 @@ class Delete
     }
 
     /**
-     * @param $orderId
-     * @throws \Exception
+     * Delete Order
+     *
+     * @param [type] $orderId
+     * @return void
      */
     public function deleteOrder($orderId)
     {

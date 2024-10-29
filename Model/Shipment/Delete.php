@@ -64,9 +64,10 @@ class Delete
     }
 
     /**
-     * @param $shipmentId
-     * @return \Magento\Sales\Model\Order
-     * @throws \Exception
+     * Delete Shipment
+     *
+     * @param [type] $shipmentId
+     * @return void
      */
     public function deleteShipment($shipmentId)
     {
@@ -79,7 +80,6 @@ class Delete
         $orderItems = $order->getAllItems();
         $shipmentItems = $shipment->getAllItems();
 
-        // revert item in order
         foreach ($orderItems as $item) {
             foreach ($shipmentItems as $shipmentItem) {
                 if ($shipmentItem->getOrderItemId() == $item->getItemId()) {
@@ -88,7 +88,6 @@ class Delete
             }
         }
 
-        // delete shipment info
         $connection->rawQuery('DELETE FROM `'.$shipmentGridTable.'` WHERE entity_id='.$shipmentId);
         $connection->rawQuery('DELETE FROM `'.$shipmentTable.'` WHERE entity_id='.$shipmentId);
         if ($order->hasShipments() || $order->hasInvoices() || $order->hasCreditmemos()) {

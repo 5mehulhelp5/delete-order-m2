@@ -43,9 +43,11 @@ class PluginAfter extends \Mavenbird\DeleteOrder\Plugin\PluginAbstract
     }
 
     /**
+     * After Get Back Url
+     *
      * @param \Magento\Shipping\Block\Adminhtml\View $subject
-     * @param $result
-     * @return mixed
+     * @param [type] $result
+     * @return void
      */
     public function afterGetBackUrl(\Magento\Shipping\Block\Adminhtml\View $subject, $result)
     {
@@ -65,8 +67,10 @@ class PluginAfter extends \Mavenbird\DeleteOrder\Plugin\PluginAbstract
     }
 
     /**
-     * @param string $shipmentId
-     * @return mixed
+     * Delte Url
+     *
+     * @param [type] $shipmentId
+     * @return void
      */
     public function getDeleteUrl($shipmentId)
     {

@@ -46,7 +46,9 @@ class PluginAbstract
     }
 
     /**
-     * @return bool
+     * Alllowed Resources
+     *
+     * @return boolean
      */
     public function isAllowedResources()
     {

@@ -51,7 +51,9 @@ class Shipment extends \Magento\Backend\App\Action
     }
 
     /**
-     * @return \Magento\Framework\App\ResponseInterface|\Magento\Framework\Controller\Result\Redirect|\Magento\Framework\Controller\ResultInterface
+     * Execute
+     *
+     * @return void
      */
     public function execute()
     {
@@ -68,8 +70,10 @@ class Shipment extends \Magento\Backend\App\Action
         return $resultRedirect;
     }
 
-    /*
-     * Check permission via ACL resource
+    /**
+     * Allowed
+     *
+     * @return void
      */
     protected function _isAllowed()
     {

@@ -64,9 +64,10 @@ class Delete
     }
 
     /**
-     * @param $creditmemoId
-     * @return \Magento\Sales\Model\Order
-     * @throws \Exception
+     * Delete Creditmemo
+     *
+     * @param [type] $creditmemoId
+     * @return void
      */
     public function deleteCreditmemo($creditmemoId)
     {
@@ -149,8 +150,11 @@ class Delete
     }
 
     /**
-     * @param $creditmemo
-     * @param $order
+     * Total And Base Total
+     *
+     * @param [type] $creditmemo
+     * @param [type] $order
+     * @return void
      */
     protected function setTotalandBaseTotal($creditmemo, $order)
     {
@@ -166,7 +170,10 @@ class Delete
     }
 
     /**
-     * @param $order
+     * Save Order
+     *
+     * @param [type] $order
+     * @return void
      */
     protected function saveOrder($order)
     {
